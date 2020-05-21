@@ -36,20 +36,22 @@
   width: 100%;
   transform-style: preserve-3d;
   position: relative;
-  transform: rotateY(-90deg);
 }
 
 .cube-top {
   height: 33.333333334%;
+  transition: transform .4s;
 }
 
 .cube-middle {
   z-index: 10;
   height: 33.333333333%;
+  transition: transform .4s .2s;
 }
 
 .cube-bottom {
   height: 33.333333333%;
+  transition: transform .4s .4s;
 }
 
 .face {
@@ -167,6 +169,10 @@
 
 .control:hover {
   background-color: rgba(42, 38, 36, .8);
+}
+
+.control i {
+  pointer-events: none;
 }
 
 .arrow-left {
